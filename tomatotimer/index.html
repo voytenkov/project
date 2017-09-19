@@ -3,30 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <div class="main-wrapper">
     
     <header class="main-header">
-      <div class="header-caption">
-        <p>Tomato Timer</p>
+     <div class="row main-header-wrapper">
+         <div class="header-caption columns">
+          <h2>TomatoTimer</h2>
+        </div>
+        <div class="header-buttons columns">
+          <ul class="nav-bar right">
+            <li class="header-button"><a href="">FAQ</a></li>
+            <li class="header-button"><a href="">Settings</a></li>
+            <li class="header-button"><a href="">Tweet about us!</a></li>
+          </ul>
+        </div>
       </div>
     </header>
     
-    <div class="actions-button-wrapper">
-      <button class="ations-button active" id="pomodoro"></button>
-      <button class="ations-button" id="short-break"></button>
-      <button class="ations-button" id="long-break"></button>
+    <div class="row">
+      <div class="actions-button-wrapper columns center">
+        <ul class="actions-buttons">
+          <li>
+            <button class="ations-button active" id="pomodoro" type="submit" value="pomodoro">Pomodoro</button>
+          </li>
+          <li>
+            <button class="ations-button" id="short-break" type="submit" value="short-break">Short Break</button>
+          </li>
+          <li>
+            <button class="ations-button" id="long-break" type="submit" value="long-break">Long Break</button>
+          </li>
+        </ul>
+      </div>
     </div>
     
-    <div class="time-wrapper">
-      <p></p>
+    <div class="row">
+      <div class="time-wrapper">
+        <p>25:00</p>
+      </div>
     </div>
     
-    <div class="button-controls-wrapper">
-      <button class="controls-button" id="start"></button>
-      <button class="controls-button" id="stop"></button>
-      <button class="controls-button" id="reset"></button>
+    <div class="row button-controls-wrapper">
+     <ul>
+        <li><button class="controls-button" id="start">Start</button></li>
+        <li><button class="controls-button" id="stop">Stop</button></li>
+        <li><button class="controls-button" id="reset">Reset</button></li>
+      </ul>
     </div>
     
   </div>
