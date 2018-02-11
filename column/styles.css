@@ -1,0 +1,11 @@
+
+.columns-wrapper {
+  background: yellow;
+  width: 300px;
+  height: auto;
+}
+
+.column {
+  height: 200px;
+  float: left;
+}
